@@ -19,6 +19,7 @@
 		8C321364193CCFFA008231D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C32134C193CCFFA008231D1 /* UIKit.framework */; };
 		8C32136C193CCFFA008231D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C32136A193CCFFA008231D1 /* InfoPlist.strings */; };
 		8C32136E193CCFFA008231D1 /* beersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C32136D193CCFFA008231D1 /* beersTests.m */; };
+		8C321379193CD20A008231D1 /* beer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C321378193CD20A008231D1 /* beer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		8C321369193CCFFA008231D1 /* beersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "beersTests-Info.plist"; sourceTree = "<group>"; };
 		8C32136B193CCFFA008231D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C32136D193CCFFA008231D1 /* beersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beersTests.m; sourceTree = "<group>"; };
+		8C321377193CD20A008231D1 /* beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beer.h; sourceTree = "<group>"; };
+		8C321378193CD20A008231D1 /* beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = beer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				8C321357193CCFFA008231D1 /* beersAppDelegate.h */,
 				8C321358193CCFFA008231D1 /* beersAppDelegate.m */,
+				8C321377193CD20A008231D1 /* beer.h */,
+				8C321378193CD20A008231D1 /* beer.m */,
 				8C32135A193CCFFA008231D1 /* Images.xcassets */,
 				8C32134F193CCFFA008231D1 /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			files = (
 				8C321359193CCFFA008231D1 /* beersAppDelegate.m in Sources */,
 				8C321355193CCFFA008231D1 /* main.m in Sources */,
+				8C321379193CD20A008231D1 /* beer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

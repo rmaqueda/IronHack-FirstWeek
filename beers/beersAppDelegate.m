@@ -7,6 +7,7 @@
 //
 
 #import "beersAppDelegate.h"
+#import "beer.h"
 
 @implementation beersAppDelegate
 
@@ -16,6 +17,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	
+	// idiom
+	beer *mahou = [[beer alloc] init];
+	//beer *moritz = [[beer alloc] init];
+	//beer *estrellaDamm = [[beer alloc] init];
+	
+	[mahou printBeerInfo];
+	[mahou printBeerInfoWithHeader:@"Header" andFooter:@"Footer" andNumberOfEmojis:10];
+	
     return YES;
 }
 
