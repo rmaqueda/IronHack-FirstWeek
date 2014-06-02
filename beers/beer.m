@@ -15,7 +15,7 @@
 	
 	NSLog(@"Name: %@\n", name);
 	NSLog(@"Color: %@\n", color);
-	NSLog(@"Alcohol: %@\n", alcohol);
+	NSLog(@"Grade: %@\n", grade);
 	
 }
 
