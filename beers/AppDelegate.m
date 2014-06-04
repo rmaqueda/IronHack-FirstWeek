@@ -6,25 +6,62 @@
 //  Copyright (c) 2014 ironhack. All rights reserved.
 //
 
-#import "beersAppDelegate.h"
-#import "beer.h"
+#import "AppDelegate.h"
+#import "Beer.h"
+#import "Person.h"
 
-@implementation beersAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    /*
+	 self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	*/
 	
 	// idiom
-	beer *mahou = [[beer alloc] init];
+	Beer *mahou = [[Beer alloc] init];
 	//beer *moritz = [[beer alloc] init];
 	//beer *estrellaDamm = [[beer alloc] init];
 	
-	[mahou printBeerInfo];
-	[mahou printBeerInfoWithHeader:@"Header" andFooter:@"Footer" andNumberOfEmojis:10];
+	[mahou setName:@"Mahou"];
+	[mahou setColor:@"Rubia"];
+	[mahou setGrade:4];
+	//moritz->name = @"Moritz";
+	//estrellaDamm->name = @"Estrella Damm";
+	
+	Person *someone = [[Person alloc] init];
+	
+	[someone setName:@"Xavier Hernandez"];
+	[someone setAge:25];
+	[someone setAddress:@"Calle Alamedia 1"];
+	
+	Person *Groucho = [[Person alloc] initWithName:@"Grouch Marx"];
+	Person *Pablo = [[Person alloc] initWithName:@"Pablo" andAddress:@"San Francisco" andAge:25 andMarried:YES];
+	Person *Zeppo = [[Person alloc] initWithName:@"Zeppo Marx" andAddress:@"Moscow" andAge:25];
+	
+	//NSLog(@"Name: %@",Groucho.name);
+	
+//	NSArray *personList = [NSArray arrayWithObjects:Groucho,Pablo,Zeppo,nil];
+//	NSArray *personList2 = @[Groucho,Pablo,Zeppo];
+//
+//	for(NSString *p in personList2)
+//	{
+//		NSLog(@"Name: %@\n", p.name);
+//	}
+	
+	//NSLog("Name: %@\n",[someone name]);
+	
+//	NSMutableArray *partyList = [NSMutableArray arrayWithObjects:Groucho,Pablo, nil];
+//	
+//	for (int i=1; i<=100; i++) {
+//		NSString *s = [NSString stringWithFormat:@"Persona %d",i];
+//		Person *p = [Person personWithName:s];
+//		[partyList addObject:p];
+//		NSLog(@"- %@",p.name);
+//	}
 	
     return YES;
 }

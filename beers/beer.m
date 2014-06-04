@@ -6,16 +6,52 @@
 //  Copyright (c) 2014 ironhack. All rights reserved.
 //
 
-#import "beer.h"
+#import "Beer.h"
 
-@implementation beer
+@implementation Beer
+
+- (void)setCountry:(NSString *)country{
+	self->_country = country;
+	
+}
+
+// setter y getter
+
+- (NSString *)name
+{
+	return self->name;
+}
+
+- (void)setName:(NSString *)newName
+{
+	self->name = newName;
+}
+
+- (NSString *)color
+{
+	return self->color;
+}
+- (void)setColor:(NSString *)newColor
+{
+	self->color = newColor;
+}
+
+- (NSUInteger)grade
+{
+	return self->grade;
+}
+
+- (void)setGrade:(NSUInteger)newGrade
+{
+	self->grade = newGrade;
+}
 
 - (void)printBeerInfo
 {
 	
 	NSLog(@"Name: %@\n", name);
 	NSLog(@"Color: %@\n", color);
-	NSLog(@"Grade: %@\n", grade);
+	NSLog(@"Grade: %lu\n", (unsigned long)grade);
 	
 }
 

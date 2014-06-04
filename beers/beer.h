@@ -8,16 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
-@interface beer : NSObject
+@interface Beer : NSObject
 
 {
 
-	// iVArs
-	NSString *name;
-	NSString *color;
-	NSUInteger grade;
+	@private
+		NSString *name;
+		NSString *color;
+		NSUInteger grade;
+		NSString *countyr;
 	
 }
+
+- (NSString *)name;
+- (void)setName:(NSString *)newName;
+
+- (NSString *)color;
+- (void)setColor:(NSString *)newColor;
+
+- (NSUInteger)grade;
+- (void)setGrade:(NSUInteger)newGrade;
+
+@property (nonatomic, strong) NSString *country;
 
 - (void)printBeerInfo;
 
@@ -27,6 +39,6 @@
 
 - (void)printBeerInfoWithHeader:(NSString *)header
 					  andFooter:(NSString *)footer
-			  andNumberOfEmojis:(NSUInteger *)numberOfEmojis;
+			  andNumberOfEmojis:(NSUInteger)numberOfEmojis;
 
 @end
