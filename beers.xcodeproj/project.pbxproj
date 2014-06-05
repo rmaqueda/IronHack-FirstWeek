@@ -81,6 +81,7 @@
 		8CD9FBD6193F7DD700D30AC4 /* BeerHotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerHotel.h; sourceTree = "<group>"; };
 		8CD9FBD7193F7DD700D30AC4 /* BeerHotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerHotel.m; sourceTree = "<group>"; };
 		8CD9FBD9193F809D00D30AC4 /* HotelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelTests.m; sourceTree = "<group>"; };
+		8CD9FBDB19405CCB00D30AC4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = beers/README.md; sourceTree = "<group>"; };
 		8CE63C72193E047000E4155E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +116,7 @@
 				8C321367193CCFFA008231D1 /* beersTests */,
 				8C321347193CCFFA008231D1 /* Frameworks */,
 				8C321346193CCFFA008231D1 /* Products */,
+				8CD9FBDB19405CCB00D30AC4 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
