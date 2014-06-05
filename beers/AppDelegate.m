@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Beer.h"
 #import "Person.h"
+#import "BeerHotel.h"
 
 @implementation AppDelegate
 
@@ -21,28 +22,27 @@
     [self.window makeKeyAndVisible];
 	*/
 	
-	// idiom
-	Beer *mahou = [[Beer alloc] init];
-	//beer *moritz = [[beer alloc] init];
-	//beer *estrellaDamm = [[beer alloc] init];
+//	Beer *mahou = [[Beer alloc] init];
+//	beer *moritz = [[beer alloc] init];
+//	beer *estrellaDamm = [[beer alloc] init];
 	
-	[mahou setName:@"Mahou"];
-	[mahou setColor:@"Rubia"];
-	[mahou setGrade:4];
-	//moritz->name = @"Moritz";
-	//estrellaDamm->name = @"Estrella Damm";
+//	[mahou setName:@"Mahou"];
+//	[mahou setColor:@"Rubia"];
+//	[mahou setGrade:4];
+//	moritz->name = @"Moritz";
+//	estrellaDamm->name = @"Estrella Damm";
 	
-	Person *someone = [[Person alloc] init];
+//	Person *someone = [[Person alloc] init];
+//	
+//	[someone setName:@"Xavier Hernandez"];
+//	[someone setAge:25];
+//	[someone setAddress:@"Calle Alamedia 1"];
+//	
+//	Person *Groucho = [[Person alloc] initWithName:@"Grouch Marx"];
+//	Person *Pablo = [[Person alloc] initWithName:@"Pablo" andAddress:@"San Francisco" andAge:25 andMarried:YES];
+//	Person *Zeppo = [[Person alloc] initWithName:@"Zeppo Marx" andAddress:@"Moscow" andAge:25];
 	
-	[someone setName:@"Xavier Hernandez"];
-	[someone setAge:25];
-	[someone setAddress:@"Calle Alamedia 1"];
-	
-	Person *Groucho = [[Person alloc] initWithName:@"Grouch Marx"];
-	Person *Pablo = [[Person alloc] initWithName:@"Pablo" andAddress:@"San Francisco" andAge:25 andMarried:YES];
-	Person *Zeppo = [[Person alloc] initWithName:@"Zeppo Marx" andAddress:@"Moscow" andAge:25];
-	
-	//NSLog(@"Name: %@",Groucho.name);
+//	NSLog(@"Name: %@",Groucho.name);
 	
 //	NSArray *personList = [NSArray arrayWithObjects:Groucho,Pablo,Zeppo,nil];
 //	NSArray *personList2 = @[Groucho,Pablo,Zeppo];
@@ -52,7 +52,7 @@
 //		NSLog(@"Name: %@\n", p.name);
 //	}
 	
-	//NSLog("Name: %@\n",[someone name]);
+//	NSLog("Name: %@\n",[someone name]);
 	
 //	NSMutableArray *partyList = [NSMutableArray arrayWithObjects:Groucho,Pablo, nil];
 //	
@@ -62,6 +62,29 @@
 //		[partyList addObject:p];
 //		NSLog(@"- %@",p.name);
 //	}
+	
+	
+	
+	
+	Person *person = [[Person alloc] initWithName:@"Xavier Hernandez"];
+	NSString *room = [NSString stringWithFormat:@"101"];
+	
+	BeerHotel *hotel = [[BeerHotel alloc] init];
+	[hotel addPerson:person toRoom:room];
+	
+	
+	Person *guest = [hotel whoSleepsAtRoom:room];
+	NSLog(@"Name: %@",[guest name]);
+	
+	
+	//Person *guestName = [hotel valueForKey:room];
+	//NSLog(@"Guest: %@", [guestName name]);
+	
+	
+	[[hotel rooms] valueForKey:@"101"];
+
+	NSLog(@"Hotel Room: %@", [[[hotel rooms] valueForKey:@"101"] name]);
+	
 	
     return YES;
 }
